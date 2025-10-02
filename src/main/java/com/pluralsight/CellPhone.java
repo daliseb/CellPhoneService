@@ -18,7 +18,7 @@ public class CellPhone {
 
     }
     //getter and setter are special methods that follow special pattern
-    public int.getSerialNumber(){
+    public int getSerialNumber(){
         return this.serialNumber;
     }
     public void setSerialNumber(int serialNumber){
@@ -27,12 +27,18 @@ public class CellPhone {
 
     }
     public String getModel() {return this.model; }
-    public void getModel(String model){this.model = model;{
+    public void getModel(String model){this.model = model;
+        }
 
-    public String getCarrier() {return this.carrier; }
+    public String getCarrier() {
+        return this.carrier;
+    }
+
     public void getCarrier(String carrier) {this.carrier = carrier; }
 
-    public String getPhoneNumber() { return this.phoneNumber;) }
+    public String getPhoneNumber() {
+        return this.phoneNumber;
+    }
     public void setPhoneNumber(String phoneNumber){
         this.phoneNumber = phoneNumber;
         }
@@ -40,11 +46,15 @@ public class CellPhone {
         return this.owner;
         }
 
+    public void setOwner(String owner){this.owner=owner;}
+
+    public void dial(String phoneNumberToCall){
+        System.out.println(owner + "'s Phone (" + phoneNumber +  ") is calling");
+        System.out.println("Ring!");
+        System.out.println("Ring!");
+        System.out.println("Ring!");
+        }
+
 
     }
 
-
-
-    }
-
-}
