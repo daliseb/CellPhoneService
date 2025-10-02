@@ -17,6 +17,14 @@ public class CellPhone {
         this.owner = "";
 
     }
+    public CellPhone(int serialNumber, String model, String carrier, String phoneNumber, String owner);
+        this.serialNumber = serialNumber;
+        this.model = model;
+        this.carrier = carrier;
+        this.phoneNumber = phoneNumber;
+        this.owner = owner;
+
+
     //getter and setter are special methods that follow special pattern
     public int getSerialNumber(){
         return this.serialNumber;
@@ -55,6 +63,9 @@ public class CellPhone {
         System.out.println("Ring!");
         }
 
+        public void dial(CellPhone phone){
+            dial(phone.getPhoneNumber());
 
+        }
     }
 

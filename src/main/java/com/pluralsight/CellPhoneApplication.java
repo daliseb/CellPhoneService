@@ -36,10 +36,21 @@ public class CellPhoneApplication {
 
         myPhone.dial("555-555-5555");
 
+        CellPhone yourPhone = new CellPhone();
+        //add extra/missing parts here.
 
 
 
-    private static void display(CellPhone)
+
+    private static void display(CellPhone phone){
+        System.out.println("---------------------");
+        System.out.println("CELL PHONE [SN:" + phone.getSerialNumber() + "]");
+        System.out.println("");
+        System.out.println("");
+        System.out.println("");
+
+
+        }
 
 
 
