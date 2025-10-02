@@ -1,4 +1,8 @@
 package com.pluralsight;
+
+
+import java.util.Scanner;
+
 //main is supposed to assign things for the user
 public class CellPhoneApplication {
     public static void main(String[] args) {
@@ -10,11 +14,11 @@ public class CellPhoneApplication {
         scanner.nextLine();
 
 
-        myPhone.setSerialNumber(sn);
+        myPhone.setSerialNumber(serialNumber);
 
         //model
         System.out.println("What is the model?:");
-        String model = scanner.nextline();
+        String model = scanner.nextLine();
         myPhone.setModel(model);
 
         //carrier
@@ -30,32 +34,25 @@ public class CellPhoneApplication {
         //owner
         System.out.println("Who is the owner?:");
         String owner = scanner.nextLine();
-
-
         myPhone.setOwner(owner);
+
 
         myPhone.dial("555-555-5555");
 
-        CellPhone yourPhone = new CellPhone();
-        //add extra/missing parts here.
-
-
-
-
-    private static void display(CellPhone phone){
-        System.out.println("---------------------");
-        System.out.println("CELL PHONE [SN:" + phone.getSerialNumber() + "]");
-        System.out.println("");
-        System.out.println("");
-        System.out.println("");
-
-
-        }
-
-
-
+        CellPhone yourPhone = new CellPhone(1221, "iphone", "att", "666-342-0000", "Dalis");
+        myPhone.dial(yourPhone);
+        yourPhone.dial(myPhone);
 
     }
 
+    private static void display(CellPhone phone) {
+        System.out.println("---------------------");
+        System.out.println("CELL PHONE [SN:" + phone.getSerialNumber() + "]");
+        System.out.println("Owner: " + phone.getOwner());
+        System.out.println("Model: " + phone.getModel());
+        System.out.println("Phone Number: " + phone.getPhoneNumber());
+
+    }
 
 }
+

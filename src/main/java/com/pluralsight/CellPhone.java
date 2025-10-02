@@ -17,12 +17,14 @@ public class CellPhone {
         this.owner = "";
 
     }
-    public CellPhone(int serialNumber, String model, String carrier, String phoneNumber, String owner);
+    public CellPhone(int serialNumber, String model, String carrier, String phoneNumber, String owner) {
+
         this.serialNumber = serialNumber;
         this.model = model;
         this.carrier = carrier;
         this.phoneNumber = phoneNumber;
         this.owner = owner;
+    }
 
 
     //getter and setter are special methods that follow special pattern
@@ -30,19 +32,27 @@ public class CellPhone {
         return this.serialNumber;
     }
     public void setSerialNumber(int serialNumber){
-        //this line of code..
+        //this line of code.
         this.serialNumber = serialNumber;
 
     }
-    public String getModel() {return this.model; }
-    public void getModel(String model){this.model = model;
-        }
+
+    public String getModel() {
+        return this.model;
+    }
+
+    public void setModel(String model) {
+        this.model = model;
+    }
 
     public String getCarrier() {
         return this.carrier;
     }
 
-    public void getCarrier(String carrier) {this.carrier = carrier; }
+    public void setCarrier(String carrier)
+    {
+        this.carrier = carrier;
+    }
 
     public String getPhoneNumber() {
         return this.phoneNumber;
@@ -54,10 +64,12 @@ public class CellPhone {
         return this.owner;
         }
 
-    public void setOwner(String owner){this.owner=owner;}
+    public void setOwner(String owner){
+        this.owner=owner;
+    }
 
     public void dial(String phoneNumberToCall){
-        System.out.println(owner + "'s Phone (" + phoneNumber +  ") is calling");
+        System.out.println(owner + "'s Phone (" + phoneNumber +  ") is calling" + phoneNumberToCall);
         System.out.println("Ring!");
         System.out.println("Ring!");
         System.out.println("Ring!");
