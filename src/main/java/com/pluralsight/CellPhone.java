@@ -1,0 +1,50 @@
+package com.pluralsight;
+
+public class CellPhone {
+    private int serialNumber;
+    private String model;
+    private String carrier;
+    private String phoneNumber;
+    private String owner;
+
+    //constructor; syntax for this. Constructor is what is used to"make", in this case,
+    //this "makes" the cell phone
+    public CellPhone (){
+        this.serialNumber = 0;
+        this.model = "";
+        this.carrier = "";
+        this.phoneNumber = "";
+        this.owner = "";
+
+    }
+    //getter and setter are special methods that follow special pattern
+    public int.getSerialNumber(){
+        return this.serialNumber;
+    }
+    public void setSerialNumber(int serialNumber){
+        //this line of code..
+        this.serialNumber = serialNumber;
+
+    }
+    public String getModel() {return this.model; }
+    public void getModel(String model){this.model = model;{
+
+    public String getCarrier() {return this.carrier; }
+    public void getCarrier(String carrier) {this.carrier = carrier; }
+
+    public String getPhoneNumber() { return this.phoneNumber;) }
+    public void setPhoneNumber(String phoneNumber){
+        this.phoneNumber = phoneNumber;
+        }
+    public String getOwner(){
+        return this.owner;
+        }
+
+
+    }
+
+
+
+    }
+
+}
